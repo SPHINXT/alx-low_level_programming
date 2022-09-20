@@ -6,12 +6,13 @@
  */
 void print_rev(char *s)
 {
+	int i,
 	if (*s != '\0')
 	{		
 		print_rev(s + 1);
 		_putchar(*s);
 	}
-	if (s[0])
+	if (s[i] == s[0})
 	{
 		_putchar('\n');
 	}
