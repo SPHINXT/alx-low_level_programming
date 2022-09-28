@@ -10,17 +10,20 @@
  * c in the string s, or NULL if the character is not found
  */
 char *_strchr(char *s, char c)
-{
-	int i;
 
-	for (i = 0; s[i] = '\0'; i++)
+{
+	int a;
+
+	while (1)
 	{
-		if (s[i] == c)
+		a = *s++;
+		if (a == c)
 		{
-			return (s);
+			return (s - 1);
 		}
-		else
-	{
-		return (NULL);
+		if (a == 0)
+		{
+			return (NULL);
+		}
 	}
 }
